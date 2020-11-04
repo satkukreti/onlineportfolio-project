@@ -42,22 +42,13 @@
 <main role="main" class="container">
   <div class="row">
     <div class="col-md-12 blog-main">
-      <hr>
-      <h3 class="pb-4 mb-4 font-italic border-bottom">
-        {{ blog.title }}
-      </h3>
-
       <div class="blog-post">
-        <h2 class="blog-post-title">{{ blog.title }}</h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Satvik</a></p>
-
-        <p>Life is cool</p>
         <hr>
-        <p>Hey, here is a link. <a href="http://www.google.com/"> google </a>, now click on it</p>
-        <blockquote>
-          <p>Bold stuff <strong> yeetus </strong> Random text cause that is a cool thing to do!</p>
-        </blockquote>
-        <p>Why not some itallics? <em>ha ha ah aha ah ahhasklfnlajf</em> I love pie.</p>
+        <h2 class="blog-post-title">{{ blog.title }}</h2>
+        <p class="blog-post-meta">{{ blog.pub_date }} by <a href="/blog/">Satvik</a></p>
+        <img class="img-fluid" src="{{ blog.image.url }}" />
+        <hr>
+        <p>{{ blog.body }}</p>
       </div>
     </div>
   </div>

@@ -46,13 +46,13 @@
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <p class="text-muted">This website was created using Django, Python, HTML, and Bootstrap CSS. I wanted to test my skills by creating my own online portfolio. This project took about 50 hours from start to finish and it wouldn't have been possible wihout the various online courses and YouTube videos at my disposal. I plan on improving this website as I progress further in my programming knowledge.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Information</h4>
+          <h4 class="text-white">Navigation</h4>
           <ul class="list-unstyled">
             <li><a href="{% url 'allblogs' %}" class="text-white">Visit My Blog</a></li>
-            <li><a href="{% static 'CV.pdf' %}" class="text-white">Resume</a></li>
+            <li><a href="{% static 'resume.pdf' %}" class="text-white">Resume</a></li>
             <li><a href="mailto:satkukreti@gmail.com" class="text-white">Email Me</a></li>
           </ul>
         </div>
@@ -79,12 +79,8 @@
       <br/>
       <img src="{% static 'selfImage.png' %}" />
       <br/>
-      <br />
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-      <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p>
+      <br/>
+      <p class="lead text-muted">I'm currently a Junior at Spackenkill High School and a novice programmer. I really love learning about science and technology and I want to work in those fields one day. Other than that, I am a competitive swimmer at Red Fox Aquatics Club and my hobbies are reading and watching anime.</p>
     </div>
   </section>
 
@@ -99,7 +95,6 @@
             <div class="card-body">
               <h5 class="card-title">{{ work.title }}</h5>
               <p class="card-text">{{ work.summary }}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
