@@ -46,7 +46,7 @@
         <hr>
         <h2 class="blog-post-title">{{ blog.title }}</h2>
         <p class="blog-post-meta">{{ blog.pub_date }} by <a href="/blog/">Satvik</a></p>
-        <img class="img-fluid" src="{{ blog.image.url }}" />
+        <img class="img-fluid" width="225" height="100%" src="{{ blog.image.url }}" preserveAspectRatio="xMidYMid slice">
         <hr>
         <p>{{ blog.body }}</p>
       </div>
